@@ -1,0 +1,212 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#title {
+  text-align: center;
+  margin-top: 100px;
+}
+#name {
+  font-size: 20px;
+}
+
+#earlylife {
+  margin-top: 300px;
+  margin-bottom: 900px;
+}
+
+#youngsteve {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 10px ridge white;
+}
+
+#education {
+  margin-top: 900px;
+  margin-bottom: 900px;
+}
+
+#stevewithmac {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 10px ridge white;
+}
+
+#apple {
+  margin-top: 900px;
+  margin-bottom: 400px;
+  padding-bottom: 100px;
+}
+
+#MacPro,
+#iPhone13,
+#iPadAir {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  margin-bottom: 50px;
+  border: 15px ridge white;
+}
+
+#images {
+  margin-right: 20px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  border: 17px ridge white;
+} /*user story 8*/
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} /*user story 9*/
+
+#img-div img {
+  width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  margin-top: 10px;
+  text-align: center;
+}
+#main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#main p {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#tribute-info {
+  text-align: center;
+}
+#tribute-link {
+  text-align: center;
+  display: block;
+}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+@keyframes glitch {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  20% {
+    transform: skewX(-10deg);
+    opacity: 0.8;
+  }
+  40% {
+    transform: none;
+    opacity: 1;
+  }
+  60% {
+    transform: skewX(10deg);
+    opacity: 0.8;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.glitch-effect {
+  animation: glitch 2s infinite;
+}
+
+.top-bar {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 2px groove white;
+}
+
+.top-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.top-bar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  width: 35px;
+  height: auto;
+  margin-right: 10px;
+  order: -1;
+}
+
+.bottom-bar {
+  background-color: black;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-top: 2px groove white;
+}
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #555;
+}
+
+.sectionPadding {
+  padding-top: 100px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Tribute to Steve Jobs</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="javascript.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<!---- 
+WOW, looks good. Love the transitions and effects. Some images takes a long time to load and you'll have to be further down the page to trigger the display. One request, add a footer next time to notify the user that they're at the end of the page.
+  - ms. Kate
+---->
+
+<body>
+  <div id="top"></div>
+  <video src="video/Dark Background Web.mp4" autoplay muted loop class="background-video"></video>
+  <div class="top-bar">
+    <a href="#">
+      <img src="images/Apple-Symbol.png" alt="Apple Logo" class="logo" />
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#earlylife">Childhood</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li class="dropdown">
+          <a href="#apple">Apple</a>
+          <div class="dropdown-content">
+            <a href="#macbook">Mac</a>
+            <a href="#iphone">iPhone</a>
+            <a href="#ipad">iPad</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="main">
+    <!-- user story 1 -->
+
+    <div class="hero">
+      <h1 id="title" class="glitch-effect">Steve Jobs (1955-2011)</h1>
+      <!-- user story 2 -->
+
+      <div id="img-div">
+        <!-- user story 3 -->
+        <img id="images" src="images/steve_jobs.jpg" alt="steve" />
+        <!-- user story 4 -->
+        <p id="img-caption">This is an image of Steve Jobs.</p>
+        <!-- user story 5 -->
+      </div>
+
+      <p id="tribute-info">
+        <b id="name">Steven Paul Jobs</b> was an American business magnate,
+        inventor, and investor. He was the co-founder, chairman, and CEO of
+        Apple; the chairman and majority shareholder of Pixar; a member of The
+        Walt Disney Company's board of directors following its acquisition of
+        Pixar; and the founder, chairman, and CEO of NeXT.
+      </p>
+      <!-- user story 6 -->
+      <span id="tribute-link">
+        Learn more about Steve Jobs
+        <a href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">here</a></span><!-- user story 7 -->
+    </div>
+
+    <section class="section">
+      <section id="earlylife" class="childhood sectionPadding">
+        <h2 class="glitch-effect">Childhood</h2>
+        <p>
+          Steve Jobs was born on February 24, 1955, in San Francisco,
+          California. He grew up in a middle-class family and showed an early
+          interest in technology and electronics.
+        </p>
+        <img src="images/young_steve.png" alt="young steve" id="youngsteve" />
+      </section>
+
+      <section id="education" class="education sectionPadding">
+        <div id="second"></div>
+        <h2 class="glitch-effect">Education and Apple's Founding</h2>
+        <!-- user story 10 -->
+        <p>
+          Jobs attended Reed College but dropped out after six months. In
+          1976, he co-founded Apple Computer Inc. (now known as Apple Inc.)
+          with Steve Wozniak in the Jobs family garage.
+        </p>
+        <!-- user story 10 -->
+        <img src="images/steve_withMac.jpg" alt="steve with mac" id="stevewithmac" />
+      </section>
+      <section id="apple" class="success sectionPadding">
+        <div id="third"></div>
+        <h2 class="glitch-effect">Success with Apple</h2>
+        <p>
+          Under Jobs' leadership, Apple introduced groundbreaking products
+          such as the Macintosh, iPod, iPhone, and iPad. His vision and
+          attention to detail transformed Apple into one of the most valuable
+          and influential technology companies in the world. Here are some of
+          the latest Apple products:
+        </p>
+        <section id="macbook" class="sectionPadding">
+          <h3 class="sectionPadding">Macbook Pro</h3>
+          <img src="images/macbook_pro.jpg" alt="MacbookPro" id="MacPro" />
+        </section>
+        <section id="iphone" class="sectionPadding">
+          <h3 class="sectionPadding">iPhone 13 Pro Max</h3>
+          <img src="images/13_proMax.jpg" alt="iPhone13ProMax" id="iPhone13" />
+        </section>
+        <section id="ipad" class="sectionPadding">
+          <h3 class="sectionPadding">iPad Air</h3>
+          <img src="images/ipad_air.jpg" alt="ipadAir" id="iPadAir" />
+        </section>
+      </section>
+    </section>
+  </div>
+
+  <div class="bottom-bar"></div>
+
+  <script>
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "30px",
+      duration: 2000,
+      reset: false
+    });
+
+    sr.reveal(".hero, .earlyLife, .education, .success, .sectionPadding", {
+      interval: 200
+    });
+  </script>
+</body>
+
+</html>
